@@ -13,7 +13,7 @@ body {
   color: #333;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h4, h5, h6 {
   margin: 0;
 }
 
@@ -233,7 +233,7 @@ span {
 
 #hero h2 {
   color: #777;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   font-size: 20px;
   font-family: "Yu Gothic", sans-serif;
   font-weight: 10;
@@ -242,14 +242,26 @@ span {
 @media (max-width: 768px) {
   #hero h2 {
     font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 30px;
+    line-height: 50px;
+    margin-bottom: 10px;
+    padding: 5%;
   }
 }
 
 #hero img {
-  max-width: 95%;
-  margin-bottom: 30px;
+  max-width: 60%;
+  margin-bottom: 60px;
+  border-color: #297d3c;
+  background-color: #297d3c;
+}
+
+@media (max-width: 520px) {
+  #hero img {
+    min-width: 100%;
+    margin-bottom: 30px;
+    border-color: #297d3c;
+    background-color: #297d3c;
+  }
 }
 
 #hero .btn-get-started {
@@ -629,7 +641,7 @@ body.mobile-nav-active #mobile-nav-toggle i {
 }
 
 #about-us .about-content {
-  padding-top: 60px;
+  padding-top: 5px;
 }
 
 #about-us .about-content h2 {
@@ -649,7 +661,7 @@ body.mobile-nav-active #mobile-nav-toggle i {
 }
 
 #about-us .about-content ul li {
-  line-height: 36px;
+  line-height: 25px;
 }
 
 #about-us .about-content ul li .fa {
@@ -1382,3 +1394,4 @@ body.mobile-nav-active #mobile-nav-toggle i {
 #hero1 .btns a:hover {
   color: #297d3c;
 }
+
