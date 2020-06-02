@@ -214,7 +214,16 @@ span {
   flex-direction: column;
   text-align: center;
 }
+.hero-container figure {
+  height: calc(100% - 200px);
+  padding-bottom: 60px;
+  overflow: hidden;
+}
+.hero-container figure img {
+  height: 100%;
+  margin: 0;
 
+}
 #hero h1 {
   margin: 0 0 10px 0;
   font-size: 48px;
@@ -228,8 +237,11 @@ span {
   #hero h1 {
     font-size: 28px;
     line-height: 36px;
+
   }
 }
+
+
 
 #hero h2 {
   color: #777;
@@ -237,11 +249,22 @@ span {
   font-size: 20px;
   font-family: "Yu Gothic", sans-serif;
   font-weight: 10;
+  
+}
+
+@media (min-width: 1065px) {
+  #hero h2 {
+    font-size: 18px;
+    line-height: 50px;
+    margin-bottom: 10px;
+    padding: 20px 10px;
+    /* margin-top: 50px; */
+  }
 }
 
 @media (max-width: 768px) {
   #hero h2 {
-    font-size: 18px;
+    font-size: 20px !important;
     line-height: 50px;
     margin-bottom: 10px;
     padding: 5%;
@@ -249,18 +272,16 @@ span {
 }
 
 #hero img {
-  max-width: 60%;
-  margin-bottom: 60px;
-  border-color: #297d3c;
-  background-color: #297d3c;
+  object-fit: contain;
+  max-width: 100%;
 }
 
 @media (max-width: 520px) {
-  #hero img {
-    min-width: 100%;
-    margin-bottom: 30px;
-    border-color: #297d3c;
-    background-color: #297d3c;
+  .hero-container figure {
+    padding-bottom: 20px;
+  }
+  .hero-container figure img {
+    transform: scale(1.5);
   }
 }
 
