@@ -1416,3 +1416,10 @@ body.mobile-nav-active #mobile-nav-toggle i {
   color: #297d3c;
 }
 
+.testimonial-image {
+  vertical-align: middle;
+    border-style: none;
+    height: 60px;
+    width: 60px;
+}
+
